@@ -60,6 +60,27 @@ Different **programming languages** are like different human languages — they 
 
 When someone says they "run" code, it means they tell the computer to actually follow the instructions in the code files. When they "build" something, they're turning the code into a finished product (like turning a recipe into a meal).
 
+### What are CLI, API, and MCP? (How Claude talks to other services)
+
+By default, Claude can only work with files on your computer. But what if you want it to do something with GitHub, or Google Drive, or some other online service? That's where these three things come in — they're different ways for Claude to reach outside your computer and interact with the world.
+
+**CLI (Command Line Interface)** — a program you install on your computer that lets you control a service by typing commands. For example, the `gh` CLI lets Claude manage your GitHub repos without opening a browser. Think of it like a remote control for a specific service.
+
+**API (Application Programming Interface)** — a way for programs to talk to online services directly over the internet. Instead of clicking buttons on a website, Claude sends requests behind the scenes. Many services offer APIs — it's like a secret back door designed for programs (not humans) to use.
+
+**MCP (Model Context Protocol)** — a plugin system specifically for AI assistants like Claude. MCP servers give Claude ready-made abilities — like reading your Google Calendar, or searching a database. Think of them as "skill packs" you can add to Claude.
+
+**What this means for you in practice:**
+
+When you want Claude to do something with an online service (post to social media, manage files in the cloud, check analytics, whatever), just ask. Claude will:
+1. Look for a CLI tool, MCP server, or API that connects to that service
+2. Tell you what's possible through it (the scope of what it can do)
+3. Install and set it up
+4. You authenticate if needed (log in, give permission)
+5. Claude handles the rest
+
+You don't need to know which of these three methods Claude uses — just describe what you want done with which service, and Claude will figure out the best way to connect to it.
+
 ### How does Claude fit into all this?
 
 Claude (that's me, the AI you're chatting with) acts as your developer. You tell me what you want in plain English, and I:
