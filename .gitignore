@@ -1,0 +1,40 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code internal files
+.plans/
+.worklogs/
+.claude/
+
+# Common dependency folders (added per-project as needed)
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Build outputs (added per-project as needed)
+dist/
+build/
+*.o
+*.out
+
+# Logs
+*.log
+npm-debug.log*
