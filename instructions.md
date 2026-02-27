@@ -155,29 +155,22 @@ All shortcuts are for macOS.
 | Move **one character** right | `Right arrow` |
 | Jump **one word** left | `Option + Left arrow` |
 | Jump **one word** right | `Option + Right arrow` |
-| Jump to the **beginning** of the line | `Ctrl + A` |
-| Jump to the **end** of the line | `Ctrl + E` |
+| Jump to the **beginning** of the line | `Cmd + Left arrow` |
+| Jump to the **end** of the line | `Cmd + Right arrow` |
 
 ### Deleting Text
 
 | What it does | Keys |
 |---|---|
 | Delete one character **to the left** (backspace) | `Delete` (backspace key) |
-| Delete one character **to the right** | `Ctrl + D` |
 | Delete one **word to the left** | `Option + Delete` |
-| Delete one **word to the right** | `Option + D` |
 | Delete **everything to the left** of the cursor (whole line back) | `Cmd + Delete` |
-| Delete **everything to the right** of the cursor | `Ctrl + K` |
-| Undo the last delete | `Ctrl + Y` (pastes back what Ctrl+K or Ctrl+U deleted) |
 
 ### Controlling What's Running
 
 | What it does | Keys |
 |---|---|
-| **Cancel** whatever is currently running | `Ctrl + C` |
-| **Close** the terminal session (exit) | `Ctrl + D` (on an empty line) |
-| **Pause** output (freeze scrolling) | `Ctrl + S` |
-| **Resume** output (unfreeze scrolling) | `Ctrl + Q` |
+| **Cancel** whatever is currently running | `Ctrl + C` (the one Ctrl shortcut you actually need) |
 | **Clear** the terminal screen | `Cmd + K` or type `clear` |
 
 ### History
@@ -186,7 +179,16 @@ All shortcuts are for macOS.
 |---|---|
 | Previous command | `Up arrow` |
 | Next command | `Down arrow` |
-| Search through past commands | `Ctrl + R`, then start typing |
+
+### Escape Key in Claude Code
+
+The Escape key does different things depending on what Claude is doing at the moment. Think of it as "go back one step":
+
+| Press # | What's happening | What Escape does |
+|---|---|---|
+| **1st** press | Claude is working (running code, writing files) | **Stops** Claude mid-action |
+| **2nd** press | You have text typed in the input box | **Clears** the input box |
+| **3rd** press | Input is already empty | **Goes back** to your previous message so you can edit and resend it |
 
 ---
 
