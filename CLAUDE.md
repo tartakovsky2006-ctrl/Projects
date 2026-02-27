@@ -9,9 +9,10 @@ This is a **monorepo** — a single git repository that contains multiple indepe
 ```
 Projects/
 ├── CLAUDE.md              # This file
-├── WHATS_HAPPENING.md     # Plain-language explainer for the user
+├── instructions.md        # Plain-language guide for the user (shortcuts, concepts, how-tos)
 ├── to_learn.md            # User's personal learning list
 ├── .gitignore             # Files git should ignore
+├── .gitattributes         # Git LFS tracking rules for binary files
 └── <project-folder>/     # Each folder = one project
 ```
 
@@ -23,7 +24,7 @@ The user is a non-developer who interacts entirely through natural language. The
 - Never ask them to run commands, edit files, or do anything technical — just do it
 - Explain what you did in simple, non-technical language after completing tasks
 - When creating new projects, add a subfolder under this root and keep things self-contained within it
-- Update `WHATS_HAPPENING.md` when introducing new concepts or tools
+- Update `instructions.md` when introducing new concepts or tools
 
 ## Repository Management
 
